@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rat in a Maze with Jump</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>🐀 Rat in a Maze (With Jump Power)</h2>
+
+  <label>Rows: <input type="number" id="rows" min="2" value="5"></label>
+  <label>Cols: <input type="number" id="cols" min="2" value="5"></label>
+  <button onclick="generateMaze()">Generate Maze</button>
+
+  <div id="maze"></div>
+
+  <p>Instructions: Click blocks to change jump value (0 = wall), then click one block to place 🐀 and one for 🧀</p>
+
+  <button onclick="solve()">Solve</button>
+  <button onclick="generateMaze()">🔄 Restart Maze</button>
+    <button onclick="clearMaze()">Clear Maze</button>
+  <div id="message"></div>
+  <!-- <button onclick="generateMaze()">🔄 Restart Maze</button>
+ -->
+
+  <script src="script.js"></script>
+</body>
+</html>

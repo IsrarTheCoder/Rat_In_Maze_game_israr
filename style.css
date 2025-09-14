@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#maze {
+  display: grid;
+  margin: 20px auto;
+  gap: 2px;
+  width: max-content;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #999;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell.wall {
+  background-color: #333;
+  color: white;
+}
+
+.cell.rat {
+  /* */
+  background-color: white;
+  color: black;
+}
+
+.cell.cheese {
+  /* ;background-color: orange */
+   background-color: white;
+  color: black;
+}
+
+.cell.visited {
+  /* 
+   */
+   background-color: #eef;
+}
